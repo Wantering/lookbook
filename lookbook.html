@@ -71,7 +71,8 @@ http://www.wantering.com
         <meta name="if:Show Search" content="0">
         <meta name="if:Peekaboo Text Posts" content="0">
         <meta name="if:Hide Profile Image" content="0">
-        <meta name="if:BlurOMatic" content="1">      
+        <meta name="if:BlurOMatic" content="1">   
+        <meta name="if:Smaller Grid" content="0">          
         <meta name="text:Facebook" content="">
         <meta name="text:Twitter" content="">
         <meta name="text:Pinterest" content="">
@@ -91,7 +92,7 @@ http://www.wantering.com
         <link rel="shortcut icon" href="{Favicon}">
         <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
         <link rel="alternate" type="application/rss+xml" href="{RSS}">
-        <link rel="stylesheet" href="http://static.tumblr.com/3cvhfpr/kWpn0syvu/styleproduction.css">
+        <link rel="stylesheet" href="http://static.tumblr.com/wi7jggm/ajan0tewh/styleproduction.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'> 
         <script type="text/javascript" src="http://static.tumblr.com/3cvhfpr/1Bcn0rwqe/modernizr.custom.11658.js"></script>
@@ -175,6 +176,18 @@ http://www.wantering.com
         	max-height: 250px;
         }
         
+        {block:ifSmallerGrid}
+        .gridSizer {
+        	width: 19.6%;
+        }
+        .gridItem {
+            width: 19.6%;
+        }
+        .gutterSizer {
+        	width: 0.5%;
+        }
+        {/block:ifSmallerGrid}
+        
         /* Set some options for the different types of backgrounds on desktop */
         @media screen and (min-width: 1024px) {
              body {
@@ -226,7 +239,7 @@ http://www.wantering.com
                     {/block:ifLookbook}
                     
                     {block:ifBlog}
-                    <a href="{text:Blog}" class="social button">{lang:My blog}</a>
+                    <a href="{text:Blog}" class="social button">{lang:My Blog}</a>
                     {/block:ifBlog}
                     
                     {block:ifPose}
