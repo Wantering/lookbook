@@ -92,7 +92,7 @@ http://www.wantering.com
         <link rel="shortcut icon" href="{Favicon}">
         <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
         <link rel="alternate" type="application/rss+xml" href="{RSS}">
-        <link rel="stylesheet" href="http://static.tumblr.com/3cvhfpr/aiLn17ai4/styleproduction.css">
+        <link rel="stylesheet" href="http://static.tumblr.com/3cvhfpr/Zkon1d1ad/styleproduction.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'> 
         <script type="text/javascript" src="http://static.tumblr.com/3cvhfpr/1Bcn0rwqe/modernizr.custom.11658.js"></script>
@@ -215,7 +215,7 @@ http://www.wantering.com
         {CustomCSS} 
         </style>
     </head>
-    <body class="{block:IndexPage} indexPage {/block:IndexPage}{block:PermalinkPage}details permalink{/block:PermalinkPage}{block:SearchPage} search-page{block:NoSearchResults} no-results{/block:NoSearchResults}{/block:SearchPage} {block:IfInfiniteScroll}infinite-scroll{/block:IfInfiniteScroll}">
+    <body class="{block:IndexPage}indexPage {/block:IndexPage}{block:PermalinkPage}details permalink{/block:PermalinkPage}{block:SearchPage} search-page{block:NoSearchResults} no-results{/block:NoSearchResults}{/block:SearchPage} {block:IfInfiniteScroll}infinite-scroll{/block:IfInfiniteScroll}">
         <div id="navigation">
             <div id="navContent" class="invisible">
                 {block:ifNotHideProfileImage}<div class="profileImage" style="background-image: url({PortraitURL-128})"></div>{/block:ifNotHideProfileImage}
@@ -288,7 +288,9 @@ http://www.wantering.com
                 </form>    
             </div>
             <a href="#" id="backButton">{lang:Back}</a>
-            <span class="credit">Theme By<br><a href="http://www.wantering.com/?utm_source=lookbook&utm_medium=sidebar&utm_campaign=credit" target="_blank" {block:PermalinkPage}rel="nofollow"{/block:PermalinkPage}>wantering</a></span>
+            {block:IndexPage}
+            <span class="credit"><a href="http://www.tumblr.com/theme/38379" class="installTheme" target="_blank">Install Theme</a>Theme By<br><a href="http://www.wantering.com/?utm_source=lookbook&utm_medium=sidebar&utm_campaign=credit" target="_blank">wantering</a></span>
+            {/block:IndexPage}
         </div>
         <section id="homePage">
             <div id="grid" class="gridNotLoaded">
@@ -354,14 +356,28 @@ http://www.wantering.com
                             <ul>
                                 {block:Lines}
                                 <li class="chatLine {Alt}  user-{UserNumber}">{block:Label}<span class="chatLabel">{Label}</span>{block:Label}<span class="chatContent">{Line}</span></li>
-                                {block:Lines}
+                                {/block:Lines}
                             </ul>
                         </div>
                     </div>    
                          <script type="text/template" class="template">
-                           <div class="detailsWrapper hidden"><div class="blurredBackground"></div> <div class="permalinkContent permalinkChatPost">{block:Title}<h2 class="postTitle">{Title}</h2>{/block:Title}<ul>{block:Lines}<li class="chatLine {Alt} user-{UserNumber}">{block:Label}<span class="chatLabel">{Label}</span>{block:Label}<span class="chatContent">{Line}</span></li>{block:Lines}</ul></div>
+                           <div class="detailsWrapper hidden"><div class="blurredBackground"></div> <div class="permalinkContent permalinkChatPost">{block:Title}<h2 class="postTitle">{Title}</h2>{/block:Title}<ul>{block:Lines}<li class="chatLine {Alt} user-{UserNumber}">{block:Label}<span class="chatLabel">{Label}</span>{block:Label}<span class="chatContent">{Line}</span></li>{/block:Lines}</ul></div>
                         </script>
                 {/block:Chat}
+                
+                {block:Answer}
+                <i class="fa fa-question-circle fa-fw postType"></i> 
+                    <div class="gridContentWrapper">
+                         <div class="gridAnswerContent gridContent long">
+                            <ul>
+                                <li class="chatLine {Alt}  user-1"><span class="chatLabel">{Asker}</span><span class="chatContent">{Question}</span></li><li class="chatLine user-2">{block:Answerer}<span class="chatLabel">{Answerer}</span>{/block:Answerer}<span class="chatContent">{Answer}</span></li>{block:Reblog}<li class="chatLine user-3"><span class="chatLabel">{Title}</span><span class="chatContent">{Replies}</span></li>{/block:Reblog}
+                            </ul>
+                        </div>
+                    </div>    
+                         <script type="text/template" class="template">
+                           <div class="detailsWrapper hidden"><div class="blurredBackground"></div> <div class="permalinkContent permalinkChatPost"><ul><li class="chatLine user-1"><span class="chatLabel">{Asker}</span><span class="chatContent">{Question}</span></li><li class="chatLine user-2">{block:Answerer}<span class="chatLabel">{Answerer}</span>{/block:Answerer}<span class="chatContent">{Answer}</span></li>{block:Reblog}<li class="chatLine user-3"><span class="chatLabel">{Title}</span><span class="chatContent">{Replies}</span></li>{/block:Reblog}</ul></div>
+                        </script>
+                {/block:Answer}
                 
                 {block:Text}
                 <i class="fa fa-file-text-o fa-fw postType"></i> 
@@ -520,7 +536,7 @@ http://www.wantering.com
             {/block:PermalinkPage}    
         </script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript" src="http://static.tumblr.com/3cvhfpr/OrBn180ge/scriptproduction.js"></script>  
+        <script type="text/javascript" src="http://static.tumblr.com/3cvhfpr/eAJn1d1f4/scriptproduction.js"></script>  
         
         {block:ifGAPropertyID}
         <script type="text/javascript">
