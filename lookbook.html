@@ -245,6 +245,10 @@ http://www.wantering.com
                     {block:ifPose}
                     <a href="{text:Pose}" class="social button">Pose</a>
                     {/block:ifPose}
+
+                    {block:ifPinterest}
+                    <a href="{text:Pinterest}" class="social button">Pinterest</a>
+                    {/block:ifPinterest}
                     
                     {block:ifVimeo}
                     <a href="{text:Vimeo}" class="social button">Vimeo</a>
@@ -263,7 +267,7 @@ http://www.wantering.com
                     {/block:ifSoundcloud}
                     
                     {block:ifBigLink}
-                    <a class="huge button" href="{text:BigLinkURL}">{text:Big Link}</a>
+                    <a class="huge button" href="{text:Big Link URL}">{text:Big Link}</a>
                     {/block:ifBigLink}
                 </div>
                 <div id="navMinorItems">
@@ -494,7 +498,7 @@ http://www.wantering.com
                 {block:Pagination}
                 <div id="pagination">
                     {block:NextPage}
-                    <a href="{NextPage}" class="nextPage gridItem button huge">{lang:Load more posts}</a>
+                    <a href="{NextPage}" class="nextPage gridItem button huge" rel="next">{lang:Load more posts}</a>
                     {/block:NextPage}
                 </div>
                 {/block:Pagination}
