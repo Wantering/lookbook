@@ -83,6 +83,7 @@ http://www.wantering.com
         <meta name="text:Pose" content="">
         <meta name="text:Vimeo" content="">
         <meta name="text:Flickr" content="">
+        <meta name="text:Wantering" content="">        
         <meta name="text:Foursquare" content="">
         <meta name="text:LinkedIn" content="">
         <meta name="text:Big Link" content="">
@@ -92,7 +93,7 @@ http://www.wantering.com
         <link rel="shortcut icon" href="{Favicon}">
         <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
         <link rel="alternate" type="application/rss+xml" href="{RSS}">
-        <link rel="stylesheet" href="http://static.tumblr.com/3cvhfpr/miin1n7f7/styleproduction.css">
+        <link rel="stylesheet" href="http://static.tumblr.com/3cvhfpr/aWnn3q5pz/styleproduction.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'> 
         <script type="text/javascript" src="http://static.tumblr.com/3cvhfpr/1Bcn0rwqe/modernizr.custom.11658.js"></script>
@@ -253,10 +254,10 @@ http://www.wantering.com
                     {block:ifVimeo}
                     <a href="{text:Vimeo}" class="social button">Vimeo</a>
                     {/block:ifVimeo}
-
+                    
                     {block:ifLinkedIn}
                     <a href="{text:LinkedIn}" class="social button">LinkedIn</a>
-                    {/block:ifLinkedIn}                     
+                    {/block:ifLinkedIn}                      
                     
                     {block:ifFlickr}
                     <a href="{text:Flickr}" class="social button">Flickr</a>
@@ -269,6 +270,10 @@ http://www.wantering.com
                     {block:ifSoundcloud}
                     <a href="{text:Soundcloud}" class="social button" style="letter-spacing: 0;">Soundcloud</a>
                     {/block:ifSoundcloud}
+                    
+                    {block:ifWantering}
+                    <a href="javascript:void(0)" class="huge button wanteringButton">My Wantering Loves</a>
+                    {/block:ifWantering}
                     
                     {block:ifBigLink}
                     <a class="huge button" href="{text:Big Link URL}">{text:Big Link}</a>
@@ -297,7 +302,7 @@ http://www.wantering.com
             </div>
             <a href="#" id="backButton">{lang:Back}</a>
             {block:IndexPage}
-            <span class="credit"><a href="http://www.tumblr.com/theme/38379" class="installTheme" target="_blank">Install Theme</a>Theme By<br><a href="http://www.wantering.com/?utm_source=lookbook&utm_medium=sidebar&utm_campaign=credit" target="_blank" {block:TagPage}rel="nofollow"{/block:TagPage}>wantering</a></span>
+            <span class="credit jumppage{PageNumber}"><a href="http://www.tumblr.com/theme/38379" class="installTheme" target="_blank">Install Theme</a>Theme By<br><a href="http://www.wantering.com/?utm_source=lookbook&utm_medium=sidebar&utm_campaign=credit" target="_blank" {block:TagPage}rel="nofollow"{/block:TagPage}>wantering</a></span>
             {/block:IndexPage}
         </div>
         <section id="homePage">
@@ -531,7 +536,9 @@ http://www.wantering.com
                 {block:ifImageSidebar}imageSidebar: true,{/block:ifImageSidebar}
                 sidebarBackground: '{image:Sidebar Background}',
                 {block:ifPeekabooTextPosts}peekaboo: true,{/block:ifPeekabooTextPosts}
-                blurRatio: 1                
+                {block:ifWantering}wanteringURL: '{text:Wantering}',{/block:ifWantering}
+                blurRatio: 1   
+                
             }
             var stateObj = {}        
             {block:IndexPage}
@@ -544,7 +551,7 @@ http://www.wantering.com
             {/block:PermalinkPage}    
         </script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript" src="http://static.tumblr.com/3cvhfpr/Xxpn1ksv7/scriptproduction.js"></script>  
+        <script type="text/javascript" src="http://static.tumblr.com/3cvhfpr/SvQn3q60v/scriptproduction.js"></script>
         
         {block:ifGAPropertyID}
         <script type="text/javascript">
