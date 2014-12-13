@@ -314,7 +314,7 @@ http://www.wantering.com
                 {/block:NoSearchResults}
                 {/block:SearchPage}
                 {block:Posts}
-                <div class="gridItem grid{PostType} {block:RebloggedFrom}reblog{/block:RebloggedFrom} id-{PostID}" data-permalink="{Permalink}" data-notes-url="{PostNotesURL}" {block:Photo}style="background-image: url({PhotoURL-500})" data-height="{PhotoHeight-100}" data-height-500="{PhotoHeight-500}" data-width-500="{PhotoWidth-500}" data-photo-100="{PhotoURL-100}" data-photo-250="{PhotoURL-250}" data-photo-high="{PhotoURL-HighRes}" data-height-high-res="{PhotoHeight-HighRes}" data-width-high-res="{PhotoWidth-HighRes}" {/block:Photo}{block:Photoset}{block:Photos}style="background-image: url({PhotoURL-500})" data-height="{PhotoHeight-100}" data-height-500="{PhotoHeight-500}" data-width-500="{PhotoWidth-500}" data-photo-100="{PhotoURL-250}" data-photo-250="{PhotoURL-250}" data-photo-high="{PhotoURL-HighRes}" data-photo-500="{PhotoURL-500}" data-height-high-res="{PhotoHeight-HighRes}" data-width-high-res="{PhotoWidth-HighRes}"{/block:Photos}{/block:Photoset} {block:Audio}{block:AlbumArt}data-art="{AlbumArtURL}"{/block:AlbumArt} {/block:Audio}{block:Video} {block:VideoThumbnail}data-thumbnail="{VideoThumbnailURL}"{/block:VideoThumbnail}{/block:Video} data-type="{PostType}" data-identifier="{PostID}" data-tags="{block:HasTags}{block:Tags}{Tag}{/block:Tags}{/block:HasTags}">
+                <div class="gridItem grid{PostType} {block:RebloggedFrom}reblog{/block:RebloggedFrom} id-{PostID}" data-permalink="{Permalink}" data-notes-url="{PostNotesURL}" {block:Photo}style="background-image: url({PhotoURL-500})" data-height="{PhotoHeight-100}" data-height-500="{PhotoHeight-500}" data-width-500="{PhotoWidth-500}" data-photo-100="{PhotoURL-100}" data-photo-250="{PhotoURL-250}" data-photo-high="{PhotoURL-HighRes}" data-height-high-res="{PhotoHeight-HighRes}" data-width-high-res="{PhotoWidth-HighRes}" {/block:Photo}{block:Photoset}{block:Photos}style="background-image: url({PhotoURL-500})" data-height="{PhotoHeight-100}" data-height-500="{PhotoHeight-500}" data-width-500="{PhotoWidth-500}" data-photo-100="{PhotoURL-250}" data-photo-250="{PhotoURL-250}" data-photo-high="{PhotoURL-HighRes}" data-photo-500="{PhotoURL-500}" data-height-high-res="{PhotoHeight-HighRes}" data-width-high-res="{PhotoWidth-HighRes}"{/block:Photos}{/block:Photoset} {block:Audio}{block:AlbumArt}data-art="{AlbumArtURL}"{/block:AlbumArt} {/block:Audio}{block:Video} {block:VideoThumbnail}data-thumbnail="{VideoThumbnailURL}"{/block:VideoThumbnail}{/block:Video} data-type="{PostType}" data-identifier="{PostID}" data-tags="{block:HasTags}{block:Tags}{Tag},{/block:Tags}{/block:HasTags}">
                 
                 {block:Photo}
                 <i class="fa fa-camera-retro fa-fw postType"></i> 
@@ -521,6 +521,7 @@ http://www.wantering.com
         <a href="/"><span id="xButton">x</span></a>
         <script type="text/javascript">
             var lookbookOptions = {
+                blogURL: {JSPlaintextBlogURL},
                 {block:IfBlurSidebar}blurSidebar: true,{/block:IfBlurSidebar}
                 blurImage: 'data-photo-100',
                 {block:ifRandomBackground}randomBackground: true,{/block:ifRandomBackground}
@@ -549,7 +550,7 @@ http://www.wantering.com
             {/block:PermalinkPage}    
         </script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript" src="http://static.tumblr.com/3cvhfpr/xUBngfdnl/lookbook.min.js"></script>
+        <script type="text/javascript" src="http://static.tumblr.com/3cvhfpr/BPDngidgn/lookbook.min.js"></script>
         
         {block:ifGAPropertyID}
         <script type="text/javascript">
